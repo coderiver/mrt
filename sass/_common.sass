@@ -46,16 +46,64 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
++font(Roboto-Regular, roboto-regular)
++font(Roboto-Medium, roboto-medium)
++font(Roboto-MediumItalic, roboto-medium-i)
++font(Roboto-Black, roboto-black)
++font(Roboto-BlackItalic, roboto-black-i)
++font(Roboto-Bold, roboto-bold)
++font(Roboto-BoldItalic, roboto-bold-i)
++font(Roboto-Italic, roboto-italic)
++font(Roboto-Light, roboto-light)
++font(Roboto-LightItalic, roboto-light-i)
++font(Roboto-Thin, roboto-thin)
++font(Roboto-ThinItalic, roboto-thin-i)
 
+=reg
+	font-family: "roboto-regular", Arial, sans-serif 
+=med
+	font-family: "roboto-medium", Arial, sans-serif
+=med-i
+	font-family: "roboto-medium-i", Arial, sans-serif 
+=black
+	font-family: "roboto-black", Arial, sans-serif 
+=black-i
+	font-family: "roboto-black-i", Arial, sans-serif
+=bold
+	font-family: "roboto-bold", Arial, sans-serif
+=bold-i
+	font-family: "roboto-bold-i", Arial, sans-serif 
+=it
+	font-family: "roboto-italic", Arial, sans-serif
+=light
+	font-family: "roboto-light", Arial, sans-serif
+=light-i
+	font-family: "roboto-light-i" , Arial, sans-serif 
+=thin
+	font-family: "roboto-thin", Arial, sans-serif
+=thin-i
+	font-family: "roboto-thin-i",   Arial, sans-serif
+	
+$blue: #2596ca
+$l-blue: #87ccec
+$orange: #ff8e41
 
 body
-	font-family: Arial, sans-serif 
-	font-size: 12px 
+	+reg
+	font-size: 14px 
 	line-height: 1.4
 
 
 // common blocks      
 
+.out
+	width: 1280px
+	margin: 0 auto 
+.title
+	+light
+	font-size: 30px
+	color: #111
+	
 
 
 
