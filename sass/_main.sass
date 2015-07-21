@@ -1,1 +1,72 @@
 // Normally mainpage styles
+.type
+	padding: 35px 0 50px 
+	.type__in
+		margin-top: 48px 
+		+display-flex()
+		+justify-content(space-between)
+	.type__header
+		+light
+		font-size: 31px
+		color: $blue
+		margin-bottom: 17px
+		border-bottom: 2px solid
+		display: inline-block
+		line-height: 1
+		&_black
+			color: #000
+			border: none
+	.type__item
+		ul
+			li
+				margin-bottom: 10px 
+				&:last-child
+					margin-bottom: 0
+				a
+					color: $blue
+					+tr(color .3s)
+					text-decoration: none
+					font-size: 18px
+					+light
+					&:hover
+						color: $l-blue
+.city
+	background: #eaf0f1 url(../img/map-bg.jpg) 0 0 no-repeat
+	+background-size(cover)
+	padding: 46px 0 55px
+	.city__in
+		margin-top: 55px
+		+display-flex()
+		+justify-content(space-around)
+	.city__item
+		li
+			margin-bottom: 10px 
+			&:last-child
+				margin-bottom: 0
+			a
+				color: $blue
+				+tr(color .3s)
+				text-decoration: none
+				font-size: 18px
+				+light
+				&:hover
+					color: $l-blue
+
+.work
+	padding: 47px 0 68px 
+	.work__in
+		+clr
+		margin-top: 55px 
+	.work__left
+		float: left
+		width: 50% 
+		padding-right: 70px 
+	.work__right
+		float: right
+		width: 50% 
+		padding-left: 72px 
+	p
+		+arial
+		font-size: 14px
+		line-height: 1.72em 
+		
