@@ -1,3 +1,26 @@
 //footer
 .footer
+	padding: 40px 0
 	border-top: 6px solid $orange 
+	.footer__header 
+		font-size: 21px
+	.footer__in
+		display: flex
+		+display-flex()
+		+justify-content(space-between)
+	ul
+		margin-top: 20px
+		li
+			a
+
+				color: $blue
+				+tr(color .3s)
+				font-size: 14px 
+				+arial
+				text-decoration: none
+				display: block
+				&:hover
+					color: $l-blue
+			&:first-child
+				margin-bottom: 5px
+					

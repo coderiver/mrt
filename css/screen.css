@@ -43,6 +43,9 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 
 .title { font-family: "roboto-light", Arial, sans-serif; font-size: 30px; color: #111; }
 
+.container { width: 1080px; margin: 0 auto; padding: 0 10px; *zoom: 1; }
+.container:after { content: " "; display: table; clear: both; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
@@ -73,4 +76,10 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 
 .btn-orange { color: #fff; border-radius: 5px; border: 1px solid #1f96bb; background: #ff8e41; padding: 23px 40px; font-family: "roboto-bold", Arial, sans-serif; font-size: 18px; }
 
-.footer { border-top: 6px solid #ff8e41; }
+.footer { padding: 40px 0; border-top: 6px solid #ff8e41; }
+.footer .footer__header { font-size: 21px; }
+.footer .footer__in { display: flex; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between; }
+.footer ul { margin-top: 20px; }
+.footer ul li a { color: #2596ca; -moz-transition: color 0.3s; -o-transition: color 0.3s; -webkit-transition: color 0.3s; transition: color 0.3s; font-size: 14px; font-family: Arial, sans-serif; text-decoration: none; display: block; }
+.footer ul li a:hover { color: #87ccec; }
+.footer ul li:first-child { margin-bottom: 5px; }
