@@ -1,0 +1,49 @@
+//inner
+.contacts
+	padding: 10px 0 140px
+	.contacts__in
+		font-size: 0
+		text-align: justify
+		margin-top: 50px 
+		// +display-flex()
+		+justify-content(space-between)
+		-ms-box-orient: horizontal
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -moz-flex
+		display: -webkit-flex
+		display: flex
+		-webkit-flex-wrap: wrap
+		flex-wrap: wrap
+	.contacts__item
+		width: 270px
+		margin-bottom: 50px
+		p
+			font-size: 16px
+			+arial
+		p + p
+			font-size: 14px 
+			margin-top: 20px 
+	.contacts__city
+		font-size: 18px
+		+arial
+		font-weight: bold
+.info
+	padding-bottom: 75px 
+.sidebar
+	margin-top: 35px
+	h4
+		font-size: 13px
+		+arial
+		font-weight: bold
+		margin-bottom: 20px
+	ul
+		li
+			margin: 10px 0  
+			a
+				color: $blue
+				text-decoration: none
+				+tr(color .3s)
+				&:hover
+					color: $l-blue

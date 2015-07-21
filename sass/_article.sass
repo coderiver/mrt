@@ -1,0 +1,44 @@
+//article
+
+.article
+	h2
+		+light
+		font-size: 30px
+		color: #111
+		line-height: 1.1em 
+	h3
+		+light
+		font-size: 24px
+		color: #111 
+		margin: 20px 0 
+	p
+		+arial
+		font-size: 14px 
+		line-height: 1.72em 
+		margin: 20px 0  
+		a
+			color: inherit
+			text-decoration: none
+			+tr(color .3s)
+			&:hover
+				color: $blue
+	h2 + p
+		margin-top: 11px 
+	p + h3
+		margin-top: 30px 
+	ul
+		margin-top: 20px 
+		li
+			padding-left: 17px
+			position: relative
+			margin-bottom: 15px
+			+arial
+			&:before
+				content: '' 
+				position: absolute  
+				top: 6px 
+				left: 0
+				width: 6px
+				height: 6px 
+				border-radius: 50%
+				background: $orange 

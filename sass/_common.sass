@@ -112,7 +112,41 @@ body
 	margin: 0 auto
 	padding: 0 10px  
 	+clr
-
+	&_no-pad
+		padding: 0
+.breadcrumbs
+	margin: 40px 0
+	.breadcrumbs__in
+		font-size: 0
+	ul
+		font-size: 0
+		li
+			display: inline-block
+			padding-right: 30px
+			position: relative
+			a
+				+arial
+				color: $blue
+				+tr(color .3s)
+				font-size: 14px
+				text-decoration: none
+				&:hover
+					color: $l-blue
+			&:after
+				content: ''
+				position: absolute
+				right: 10px
+				top: 50%
+				margin-top: -5px  
+				+s(arr)
+			&:last-child
+				padding-right: 0
+				&:after
+					display: none
+				a
+					color: #000
+					pointer-events: none
+		
 
 
 
