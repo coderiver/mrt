@@ -58,6 +58,8 @@
 +font(Roboto-LightItalic, roboto-light-i)
 +font(Roboto-Thin, roboto-thin)
 +font(Roboto-ThinItalic, roboto-thin-i)
++font(robotocondensed-bold,robotocondensed-bold)
++font(Helvetica_Light-Normal,helveticaneuecyr-medium)
 
 =reg
 	font-family: "roboto-regular", Arial, sans-serif 
@@ -83,19 +85,28 @@
 	font-family: "roboto-thin", Arial, sans-serif
 =thin-i
 	font-family: "roboto-thin-i",   Arial, sans-serif
+=cbold
+	font-family: "robotocondensed-bold",   Arial, sans-serif 
+
 =arial
-	font-family: Arial, sans-serif
+	font-family:  Arial, sans-serif
 	
 $blue: #2596ca
 $l-blue: #87ccec
 $orange: #ff8e41
 
+[class^="icon-"], 
+[class*=" icon-"]
+	display: inline-block
+.icon-add
+	+svg(add,16,16)
+.icon-arr2-b
+	+s(arr2-b)
+
 body
 	+reg
 	font-size: 14px 
 	line-height: 1.4
-
-
 // common blocks      
 
 .out
@@ -107,6 +118,9 @@ body
 	font-size: 30px
 	color: #111
 	text-align: center
+	&_big
+		+reg
+		font-size: 40px 
 .container
 	width: 1085px
 	margin: 0 auto
@@ -146,7 +160,7 @@ body
 				a
 					color: #000
 					pointer-events: none
-		
+
 
 
 

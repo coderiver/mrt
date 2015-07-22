@@ -3,19 +3,9 @@
 	padding: 10px 0 140px
 	.contacts__in
 		font-size: 0
-		text-align: justify
-		margin-top: 50px 
-		// +display-flex()
-		+justify-content(space-between)
-		-ms-box-orient: horizontal
-		display: -webkit-box
-		display: -moz-box
-		display: -ms-flexbox
-		display: -moz-flex
-		display: -webkit-flex
-		display: flex
-		-webkit-flex-wrap: wrap
-		flex-wrap: wrap
+		margin: 50px -62px 0 -62px 
+		
+
 	.contacts__item
 		width: 270px
 		margin-bottom: 50px
@@ -29,6 +19,10 @@
 		font-size: 18px
 		+arial
 		font-weight: bold
+.contacts-wrap
+	display: inline-block
+	padding: 0 63px 
+
 .info
 	padding-bottom: 75px 
 .sidebar
@@ -38,7 +32,9 @@
 		+arial
 		font-weight: bold
 		margin-bottom: 20px
-	ul
+	> ul
+		margin-bottom: 50px 
+
 		li
 			margin: 10px 0  
 			a
@@ -47,3 +43,92 @@
 				+tr(color .3s)
 				&:hover
 					color: $l-blue
+			> ul
+				margin-left: 20px 
+			&.is-inactive
+				a
+					color: #bbc7ca
+					pointer-events: none
+.banner
+	background: #4fb427 url(../img/banner-bg.png) right bottom no-repeat
+	text-align: center
+	border-radius: 5px
+	color: #fff
+	padding-top: 47px
+	padding-bottom: 27px 
+	.banner__header
+		+cbold
+		font-size: 30px
+	.banner__count
+		width: 80px 
+		height: 80px
+		text-align: center
+		margin: 6px auto 9px
+		border-radius: 50%
+		background: #60b43e 
+		line-height: 80px 
+		+cbold
+		font-size: 60px
+	p
+		font-size: 16px
+		strong
+			+bold
+	.banner__footer
+		margin-top: 52px
+		p:first-child
+			margin-bottom: 10px 
+
+.region
+	background: #e4ebed 
+	padding: 81px 0 92px 
+	.region__in
+		font-size: 0
+		text-align: center
+		margin-top: 30px
+	.region__item
+		display: inline-block
+		text-align: left
+		margin: 0 42px  
+		ul
+			li
+				margin-bottom: 10px
+				a
+					color: $blue
+					+tr(color .3s)
+					font-size: 18px
+					+light
+					text-decoration: none
+					&:hover
+						color: $l-blue
+						
+					
+
+	.region__header
+		+light
+		font-size: 21px
+		margin-bottom: 25px 
+	.btn-wrap
+		margin-top: 25px 
+.btn-wrap
+	display: block
+.btn-add
+	display: inline-block
+	padding: 13px 24px 
+	border-radius: 5px
+	border: 1px solid #c1cccf
+	color: $blue
+	+tr(color .3s)
+	+light
+	font-size: 18px
+	text-decoration: none
+	line-height: 1
+	i
+		vertical-align: top
+		margin-right: 10px
+		+tr(background .3s) 
+		
+	&:hover
+		color: $l-blue
+		i
+			+svgi(add-h,16,16)
+		

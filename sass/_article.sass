@@ -1,11 +1,15 @@
 //article
-
+th
+	font-weight: normal
 .article
 	h2
 		+light
 		font-size: 30px
 		color: #111
 		line-height: 1.1em 
+		margin-top: 90px
+		&:first-child
+			margin-top: 0
 	h3
 		+light
 		font-size: 24px
@@ -42,3 +46,173 @@
 				height: 6px 
 				border-radius: 50%
 				background: $orange 
+	table
+		width: 100%  
+		table-layout: fixed
+		margin: 20px 0
+		th,
+		td
+			text-align: left
+			vertical-align: middle
+	.link-more
+		text-align: center
+		display: block
+
+.table-short
+	background: #f8fafb 
+	th,
+	td
+		padding: 15px 46px 15px 46px 
+	th
+		width: 330px 
+		background: #e8eff1 
+		+bold
+	td
+		div
+			display: inline-block
+			vertical-align: middle
+			margin-left: 40px 
+			span
+				display: block
+				color: #b7c3c7
+				font-size: 12px
+	tr
+		border-bottom: 1px solid #dbe3e5
+		&:last-child
+			border-bottom: none
+
+.link-more
+	text-decoration: none
+	color: $blue
+	font-size: 18px
+	+tr(color .3s)
+	i
+		vertical-align: middle
+		+tr(background .3s)
+		margin-right: 8px
+		margin-top: -3px
+	&:hover
+		color: $l-blue
+		i
+			+svgi(add-h,16,16)
+.table-search
+	thead
+		th
+			+cbold
+			color: #95a2a4
+			padding-top: 6px
+			padding-bottom: 6px
+
+	tbody
+		background: #f8fafb
+		tr
+			background: #f8fafb 
+			th
+				background: #62b9d3
+				letter-spacing: -1px  
+			&:nth-child(2n)
+				background: #e8eff1
+				th
+					background: #30a7ca
+		th
+			padding: 15px 10px
+			color: #fff
+			a
+				color: #fff
+				+tr(color .3s)
+				text-decoration: none
+				border-bottom: 1px solid
+				&:hover
+					color: #90e6ff
+		td
+			a
+				color: $blue
+				+tr(color .3s)
+				text-decoration: none
+				&:hover
+					color: $l-blue
+	thead,
+	tbody
+		tr
+			td,th
+				&:first-child
+					width: 152px
+					padding-left: 10px 
+				&:nth-child(2)
+					padding-left: 32px 
+				&:last-child
+					padding-left: 30px 
+.table-list
+	overflow: scroll
+	thead
+		th
+			+cbold
+			color: #95a2a4
+			padding: 6px 0
+			i
+				vertical-align: middle
+				margin-top: -3px
+				+tr(transform .3s)
+			&[role="sort"]
+				cursor: pointer
+			&.headerSortDown
+				i
+					+scaleY(-1)
+
+			
+
+	tbody
+		background: #f8fafb
+		tr
+			background: #fff 
+			&:nth-child(2n)
+				background: #e8eff1
+		td
+			padding: 15px 0 
+			a
+				color: $blue
+				+tr(color .3s)
+				text-decoration: none
+				&:hover
+					color: #90e6ff
+		td
+			a
+				color: $blue
+				+tr(color .3s)
+				text-decoration: none
+				&:hover
+					color: $l-blue
+	thead,
+	tbody
+		tr
+			td,th
+				&:first-child
+					width: 182px
+					padding-left: 10px 
+				&:nth-child(2)
+					// padding-left: 32px
+					width: 222px 
+				&:nth-child(3)
+					width: 71px 
+				&:nth-child(4)
+					width: 160px 			
+
+.table-simple
+	th,
+	td
+		border: 1px solid #d8e2e5 
+	th
+		+bold
+		padding-left: 35px 
+		padding-right: 10px 
+		width: 50%
+		padding-top: 20px
+		padding-bottom: 20px   
+	td
+		padding-left: 25px
+		padding-right: 10px 
+		width: 50%
+	tr
+		height: 94px
+
+		  

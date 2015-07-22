@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>Contacts</title>
 	<meta name="theme-color" content="#fff"> 
-	<meta name="viewport" content="width=1280,user-scalable=no">
+	<meta name="viewport" content="width=1280,user-scalable=yes">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
@@ -15,63 +15,66 @@
 	<div class="header">
 		<div class="header__title">МРТ головного мозга в Санкт-Петербурге за 2 459 руб</div>
 		<p>Укажите имя и телефон, чтобы получить лушие условия</p>
-		<div class="form">
-			<form>
-				<input type="text" class="form__input" placeholder="Имя">
-				<input type="text" class="form__input" placeholder="Телефон">
-				<div class="form__select select js-select">
-				    <span class="select__text js-select-text">Санкт-Петербург</span>
-				    <label class="label">Ваш город</label>
-				    <ul class="select__list js-select-list">
-						<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
-						<li data-val="Москва">Москва</li>
-						<li data-val="Калининград">Калининград</li>
-						<li data-val="Екатеринбург">Екатеринбург</li>
-				    </ul>
-				    <select>
-						<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
-						<option value="Москва">Москва</option>
-						<option value="Калининград">Калининград</option>
-						<option value="Екатеринбург">Екатеринбург</option>
-				    </select>
-				</div>
-				<div class="form__select select js-select">
-				    <span class="select__text js-select-text">МРТ</span>
-				    <label class="label">Специализация</label>
-				    <ul class="select__list js-select-list">
-						<li data-val="МРТ" class="is-active">МРТ</li>
-						<li data-val="УЗИ">УЗИ</li>
-						<li data-val="КТ">КТ</li>
-				    </ul>
-				    <select>
-						<option value="МРТ" selected="selected">МРТ</option>
-						<option value="УЗИ">УЗИ</option>
-						<option value="КТ">КТ</option>
-				    </select>
-				</div>
-				<div class="form__select select js-select">
-				    <span class="select__text js-select-text">МРТ головного мозга</span>
-				    <label class="label">Услуга</label>
-				    <ul class="select__list js-select-list">
-						<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
-						<li data-val="МРТ гипофиза">МРТ гипофиза</li>
-						<li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
-						<li data-val="МРТ пазух носа">МРТ пазух носа</li>
-				    </ul>
-				    <select>
-						<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
-						<option value="МРТ гипофиза">МРТ гипофиза</option>
-						<option value="МРТ глазных орбит">МРТ глазных орбит</option>
-						<option value="МРТ пазух носа">МРТ пазух носа</option>
-				    </select>
-				</div>
-				<input type="button" class="form__btn btn-orange" value="Показать лучшие условия">
-			</form>
-		</div>
-		<div class="header__footer">
-			<p>или просто звоните</p>
-			<div class="header__title">+7 (812) 385-77-56</div>
-
+		<div class="container">
+		    <div class="form">
+		        <form>
+		            <div class="input-wrap">
+		                <input type="text" class="form__input" placeholder="Имя">
+		                <input type="text" class="form__input" placeholder="Телефон">
+		                <div class="form__select select js-select">
+		                    <span class="select__text js-select-text">Санкт-Петербург</span>
+		                    <label class="label">Ваш город</label>
+		                    <ul class="select__list js-select-list">
+		                        <li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
+		                        <li data-val="Москва">Москва</li>
+		                        <li data-val="Калининград">Калининград</li>
+		                        <li data-val="Екатеринбург">Екатеринбург</li>
+		                    </ul>
+		                    <select>
+		                        <option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
+		                        <option value="Москва">Москва</option>
+		                        <option value="Калининград">Калининград</option>
+		                        <option value="Екатеринбург">Екатеринбург</option>
+		                    </select>
+		                </div>
+		                <div class="form__select select js-select">
+		                    <span class="select__text js-select-text">МРТ</span>
+		                    <label class="label">Специализация</label>
+		                    <ul class="select__list js-select-list">
+		                		<li data-val="МРТ" class="is-active">МРТ</li>
+		                		<li data-val="УЗИ">УЗИ</li>
+		                		<li data-val="КТ">КТ</li>
+		                    </ul>
+		                    <select>
+		                		<option value="МРТ" selected="selected">МРТ</option>
+		                		<option value="УЗИ">УЗИ</option>
+		                		<option value="КТ">КТ</option>
+		                    </select>
+		                </div>
+		                <div class="form__select select js-select">
+		                    <span class="select__text js-select-text">МРТ головного мозга</span>
+		                    <label class="label">Услуга</label>
+		                    <ul class="select__list js-select-list">
+		                        <li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
+		                        <li data-val="МРТ гипофиза">МРТ гипофиза</li>
+		                        <li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
+		                        <li data-val="МРТ пазух носа">МРТ пазух носа</li>
+		                    </ul>
+		                    <select>
+		                        <option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
+		                        <option value="МРТ гипофиза">МРТ гипофиза</option>
+		                        <option value="МРТ глазных орбит">МРТ глазных орбит</option>
+		                        <option value="МРТ пазух носа">МРТ пазух носа</option>
+		                    </select>
+		                </div>
+		            </div>
+		            <input type="button" class="form__btn btn-orange" value="Показать лучшие условия">
+		            <div class="form__footer">
+		                <p>или просто звоните</p>
+		                <div class="header__title">+7 (812) 385-77-56</div>
+		            </div>
+		        </form>
+		    </div>
 		</div>
 	</div>
 	
@@ -90,45 +93,47 @@
 		<div class="title">Контактная информация</div>
 		<div class="container">
 			<div class="contacts__in">
-				<div class="contacts__item">
-					<div class="contacts__city">Москва</div>
-					<p>Москва, Льва Толстого, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Москва</div>
+						<p>Москва, Льва Толстого, 16 и 18Б</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Архангельск</div>
-					<p>Архангельск, Восточная, 16</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Архангельск</div>
+						<p>Архангельск, Восточная, 16</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Екатеринбург</div>
-					<p>Екатеринбург, Ленина, 2</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Екатеринбург</div>
+						<p>Екатеринбург, Ленина, 2</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Балашиха</div>
-					<p>Балашиха, Льва Толстого, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Москва</div>
+						<p>Москва, Льва Толстого, 16 и 18Б</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Уфа</div>
-					<p>Уфа, Льва Толстого, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Архангельск</div>
+						<p>Архангельск, Восточная, 16</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Пермь</div>
-					<p>Пермь, Пискаревский, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
-				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Пермь</div>
-					<p>Пермь, Пискаревский, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
-				</div>
-				<div class="contacts__item">
-					<div class="contacts__city">Пермь</div>
-					<p>Пермь, Пискаревский, 16 и 18Б</p>
-					<p>+7 (495) 112-90-55</p>
+				<div class="contacts-wrap">
+					<div class="contacts__item">
+						<div class="contacts__city">Екатеринбург</div>
+						<p>Екатеринбург, Ленина, 2</p>
+						<p>+7 (495) 112-90-55</p>
+					</div>
 				</div>
 			</div>
 		</div>

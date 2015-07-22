@@ -50,5 +50,20 @@ head.ready(function() {
         selectList.slideUp(100);
         return false;
     });
+    function sort(){
+        $('.js-sort').tablesorter({cssHeader: false, headers: { 0: { sorter: false}, 1: {sorter: false} }}); 
+    }
+      if($('.js-sort').length) {
+        sort();
+      }
+
+      $('.js-nav a').on('click', function(){
+        var section = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(section).offset().top - 10
+        }, 500);
+        return false;
+      });
+
 
 });

@@ -14,10 +14,6 @@
 		color: #fff
 		text-align: center
 		font-size: 21px
-	.header__footer
-		text-align: center
-		p
-			margin-bottom: 9px 
 
 		
 .form
@@ -44,18 +40,54 @@
 		display: block
 		margin: 0 auto
 		margin: 33px auto
+		border: 1px solid #1f96bb
+	.form__footer
+		text-align: center
+		p
+			margin-bottom: 9px 
+			+light
+			font-size: 21px
+			color: #fff
+	
+	&_ind
+		.form__input,
+		.select__text,
+		.select__list,
+			border: 1px solid #e4ebed 
+		.select__list
+			border-top: none !important 
+		.form__btn
+			border: none
+		.form__footer
+			p
+				color: #000
+		.label
+			color: #d6d6d6
+				
+		
+.input-wrap
+	text-align: left
+	+display-flex()
+	+justify-content(space-between)	
+	margin: 0 auto	
+	.form__input
+		width: auto
+		margin-right: 25px
+		+flex(1 0 100px)
+		
+		
+
 
 .select
 	position: relative
 	color: #000
 	border-radius: 5px
-	width: 199px 
+	+flex(1 0 100px)
 	.select__text
 		font-size: 16px
 		border-radius: 5px
 		padding: 13px 23px 13px 16px
 		display: block
-		width: 199px 
 		background: #FFF 
 		text-align: left
 		height: 45px
@@ -108,7 +140,6 @@
 .btn-orange
 	color: #fff
 	border-radius: 5px
-	border: 1px solid #1f96bb
 	background: $orange 
 	padding:  23px 40px 
 	+bold
