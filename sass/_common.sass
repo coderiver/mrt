@@ -111,7 +111,7 @@ body
 
 .out
 	width: 100% 
-	min-width: 1280px
+	min-width: 1024px
 	margin: 0 auto 
 .title
 	+light
@@ -120,7 +120,11 @@ body
 	text-align: center
 	&_big
 		+reg
-		font-size: 40px 
+		font-size: 40px
+	+r(1280)
+		width: 80%
+		margin: 0 auto 
+		font-size: 40px
 .container
 	width: 1085px
 	margin: 0 auto
@@ -128,6 +132,9 @@ body
 	+clr
 	&_no-pad
 		padding: 0
+	+r(1280)
+		width: auto
+		padding: 0 40px
 .breadcrumbs
 	margin: 40px 0
 	.breadcrumbs__in
@@ -160,6 +167,9 @@ body
 				a
 					color: #000
 					pointer-events: none
+	+r(1280)
+		ul li a
+			font-size: 20px
 
 
 

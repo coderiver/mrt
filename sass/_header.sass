@@ -14,6 +14,13 @@
 		color: #fff
 		text-align: center
 		font-size: 21px
+	+r(1280)
+		.header__title
+			width: 70%
+			margin: 0 auto
+			font-size: 45px
+		p
+			font-size: 28px
 
 		
 .form
@@ -36,6 +43,8 @@
 		vertical-align: top
 		&:last-of-type
 			margin-right: 0
+		+r(1280)
+			margin-right: 10px
 	.form__btn
 		display: block
 		margin: 0 auto
@@ -48,6 +57,11 @@
 			+light
 			font-size: 21px
 			color: #fff
+	+r(1280)
+		.form__input
+			font-size: 20px
+		.form__footer p
+			font-size: 28px
 	
 	&_ind
 		.form__input,
@@ -74,6 +88,8 @@
 		width: auto
 		margin-right: 25px
 		+flex(1 0 100px)
+		+r(1280)
+			margin-right: 10px
 		
 		
 
@@ -105,7 +121,6 @@
 			border-radius: 5px 5px 0 0
 			&:before
 				+scaleY(-1) 
-		
 	.select__list
 		display: none
 		position: absolute
@@ -137,6 +152,24 @@
 		left: 20px
 		color: #67ceee 
 		font-size: 14px 
+		
+	+r(1280)
+		& > .select__list
+			padding: 10px 0
+			li
+				padding: 10px 20px
+				line-height: 1
+				font-size: 20px
+		.select__text
+			white-space: nowrap
+			overflow: hidden
+			text-overflow: ellipsis
+			padding-right: 30px
+			padding-top: 7px
+			font-size: 20px
+		.label
+			font-size: 18px
+		
 .btn-orange
 	color: #fff
 	border-radius: 5px
@@ -148,3 +181,5 @@
 	+tr(background .3s)
 	&:hover
 		background: #f8962d 
+	+r(1280)
+		font-size: 28px

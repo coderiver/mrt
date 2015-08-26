@@ -57,6 +57,13 @@ th
 	.link-more
 		text-align: center
 		display: block
+	+r(1280)
+		ul li
+			font-size: 24px
+			&:before
+				top: 13px
+		p
+			font-size: 24px
 
 .table-short
 	background: #f8fafb 
@@ -80,6 +87,12 @@ th
 		border-bottom: 1px solid #dbe3e5
 		&:last-child
 			border-bottom: none
+	+r(1280)
+		font-size: 24px
+		th, td
+			padding: 10px 20px
+		td div span
+			font-size: 18px
 
 .link-more
 	text-decoration: none
@@ -95,6 +108,8 @@ th
 		color: $l-blue
 		i
 			+svgi(add-h,16,16)
+	+r(1280)
+		font-size: 22px
 .table-search
 	thead
 		th
@@ -142,6 +157,11 @@ th
 					padding-left: 32px 
 				&:last-child
 					padding-left: 30px 
+	+r(1280)
+		thead th
+			font-size: 22px
+		tbody th, td
+			font-size: 22px
 .table-list
 	overflow: scroll
 	thead
@@ -195,7 +215,12 @@ th
 				&:nth-child(3)
 					width: 71px 
 				&:nth-child(4)
-					width: 160px 			
+					width: 160px 	
+	+r(1280)
+		thead th
+			font-size: 24px
+		tbody th, td
+			font-size: 22px		
 
 .table-simple
 	th,
@@ -214,5 +239,8 @@ th
 		width: 50%
 	tr
 		height: 94px
+	+r(1280)
+		th, td
+			font-size: 22px
 
 		  
