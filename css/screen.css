@@ -51,12 +51,12 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 
 .title { font-family: "roboto-light", Arial, sans-serif; font-size: 30px; color: #111; text-align: center; }
 .title_big { font-family: "roboto-regular", Arial, sans-serif; font-size: 40px; }
-@media only screen and (max-width: 1024px) { .title { width: 80%; margin: 0 auto; } }
+@media only screen and (max-width: 1100px) { .title { width: 80%; margin: 0 auto; } }
 
 .container { width: 1085px; margin: 0 auto; padding: 0 10px; *zoom: 1; }
 .container:after { content: " "; display: table; clear: both; }
 .container_no-pad { padding: 0; }
-@media only screen and (max-width: 1024px) { .container { width: auto; padding: 0 40px; } }
+@media only screen and (max-width: 1100px) { .container { width: auto; padding: 0 40px; } }
 
 .breadcrumbs { margin: 40px 0; }
 .breadcrumbs .breadcrumbs__in { font-size: 0; }
@@ -73,19 +73,19 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 760px; }
 .l .l-col2 { float: right; width: 270px; }
-@media only screen and (max-width: 1024px) { .l .l-col1 { width: 70%; }
+@media only screen and (max-width: 1100px) { .l .l-col1 { width: 70%; }
   .l .l-col2 { width: 25%; } }
 
 .header { background: #2596ca url(../img/header-bg.jpg) 0 0 no-repeat; height: 720px; padding-top: 118px; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
 .header .header__title { color: #fff; font-size: 40px; text-align: center; margin-bottom: 12px; }
 .header p { font-family: "roboto-light", Arial, sans-serif; color: #fff; text-align: center; font-size: 21px; }
-@media only screen and (max-width: 1024px) { .header .header__title { width: 70%; margin: 0 auto; } }
+@media only screen and (max-width: 1100px) { .header .header__title { width: 70%; margin: 0 auto; } }
 
 .form { margin: 91px 0 51px; font-size: 0; text-align: center; }
 .form .form__input { width: 199px; background: #FFF; padding: 13px 16px; font-family: "roboto-regular", Arial, sans-serif; font-size: 16px; border-radius: 5px; margin-right: 25px; vertical-align: top; height: 45px; }
 .form .form__select { display: inline-block; margin-right: 25px; vertical-align: top; }
 .form .form__select:last-of-type { margin-right: 0; }
-@media only screen and (max-width: 1024px) { .form .form__select { margin-right: 10px; } }
+@media only screen and (max-width: 1100px) { .form .form__select { margin-right: 10px; } }
 .form .form__btn { display: block; margin: 0 auto; margin: 33px auto; border: 1px solid #1f96bb; }
 .form .form__footer { text-align: center; }
 .form .form__footer p { margin-bottom: 9px; font-family: "roboto-light", Arial, sans-serif; font-size: 21px; color: #fff; }
@@ -97,7 +97,7 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 
 .input-wrap { text-align: left; display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between; margin: 0 auto; }
 .input-wrap .form__input { width: auto; margin-right: 25px; -webkit-flex: 1 0 100px; flex: 1 0 100px; }
-@media only screen and (max-width: 1024px) { .input-wrap .form__input { margin-right: 10px; } }
+@media only screen and (max-width: 1100px) { .input-wrap .form__input { margin-right: 10px; } }
 
 .select { position: relative; color: #000; border-radius: 5px; -webkit-flex: 1 0 100px; flex: 1 0 100px; }
 .select .select__text { font-size: 16px; border-radius: 5px; padding: 13px 23px 13px 16px; display: block; background: #FFF; text-align: left; height: 45px; cursor: pointer; letter-spacing: -1px; -moz-transition: border-radius, 0.1s; -o-transition: border-radius, 0.1s; -webkit-transition: border-radius, 0.1s; transition: border-radius, 0.1s; }
@@ -109,9 +109,9 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 .select .select__list li:hover { color: rgba(0, 0, 0, 0.8); }
 .select select { position: absolute; top: 0; visibility: hidden; }
 .select .label { position: absolute; top: -30px; left: 20px; color: #67ceee; font-size: 14px; }
-@media only screen and (max-width: 1024px) { .select > .select__list { padding: 10px 0; }
+@media only screen and (max-width: 1100px) { .select > .select__list { padding: 10px 0; }
   .select > .select__list li { padding: 10px 20px; line-height: 1; }
-  .select .select__text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 30px; padding-top: 7px; } }
+  .select .select__text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 30px; } }
 
 .btn-orange { color: #fff; border-radius: 5px; background: #ff8e41; padding: 23px 40px; font-family: "roboto-bold", Arial, sans-serif; font-size: 18px; cursor: pointer; -moz-transition: background 0.3s; -o-transition: background 0.3s; -webkit-transition: background 0.3s; transition: background 0.3s; }
 .btn-orange:hover { background: #f8962d; }
@@ -149,15 +149,15 @@ body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-h
 .work p { font-family: Arial, sans-serif; font-size: 14px; line-height: 1.72em; }
 
 .contacts { padding: 10px 0 140px; }
-.contacts .contacts__in { font-size: 0; margin: 50px -62px 0 -62px; }
+.contacts .contacts__in { font-size: 0; margin: 50px 0 0 -126px; }
 .contacts .contacts__item { width: 270px; margin-bottom: 50px; }
 .contacts .contacts__item p { font-size: 16px; font-family: Arial, sans-serif; }
 .contacts .contacts__item p + p { font-size: 14px; margin-top: 20px; }
 .contacts .contacts__city { font-size: 18px; font-family: Arial, sans-serif; font-weight: bold; }
-@media only screen and (max-width: 1024px) { .contacts { padding-bottom: 60px; }
+@media only screen and (max-width: 1100px) { .contacts { padding-bottom: 60px; }
   .contacts .contacts__in { margin: 50px 0 0; } }
 
-.contacts-wrap { display: inline-block; padding: 0 63px; }
+.contacts-wrap { display: inline-block; margin-left: 126px; }
 
 .info { padding-bottom: 75px; }
 
