@@ -102,7 +102,14 @@ $orange: #ff8e41
 	+svg(add,16,16)
 .icon-arr2-b
 	+s(arr2-b)
-
+.icon-subway
+	+s(subway)
+.icon-mark_mini
+	+s(mark_mini)
+.icon-set
+	+s(set)
+.icon-clock
+	+s(clock)
 body
 	+reg
 	font-size: 14px 
@@ -166,111 +173,22 @@ body
 				a
 					color: #000
 					pointer-events: none
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.tabs
+	overflow: hidden  
+	margin: 20px 0 20px -5px
+.tabs__item
+	float: left  
+	margin: 0 5px 0
+	&.is-active
+		.tabs__link
+			background: #fff
+			color: #000
+			border-radius: 5px
+
+.tabs__link
+	display: block  
+	padding: 10px 20px
+	color: #4fb427
+	text-decoration: none 
+.tabs-content
+	display: none
