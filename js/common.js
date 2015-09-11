@@ -101,6 +101,10 @@ head.ready(function() {
 			return false;
 	});
 	$(".js-custom-scroll").mCustomScrollbar({
-		theme: "light-thick"
+		theme: "light-thick",
+		scrollInertia: 200,
+		mouseWheel:{
+		preventDefault: true,
+		scrollAmount: 150 }
 	});
 });
