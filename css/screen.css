@@ -571,9 +571,13 @@ a.link:hover { color: #87ccec; }
 
 .address-list { width: 100%; max-height: 590px; background-color: #f8fafb; }
 
-.address { padding: 18px 20px; background: #f8fafb; width: 100%; border-left: 1px solid #e4ebed; border-right: 1px solid #e4ebed; }
+.address { padding: 18px 20px; background: #f8fafb; width: 100%; border-left: 1px solid #e4ebed; border-right: 1px solid #e4ebed; *zoom: 1; }
+.address:after { content: " "; display: table; clear: both; }
 .address:nth-child(2n) { background: #deebef; }
 .address .address__header { font-family: "roboto-light", Arial, sans-serif; font-size: 23px; color: #2596ca; }
+.address .address__footer { margin-top: 14px; padding: 5px 36px 5px 20px; background-color: #deebef; *zoom: 1; }
+.address .address__footer:after { content: " "; display: table; clear: both; }
+.address .address__footer.is-white { background-color: #FFF; }
 .address .address__item { display: inline-block; vertical-align: middle; margin-left: 55px; }
 .address .address__item:first-child { margin-left: 0; }
 .address .address__item li { position: relative; padding-left: 20px; margin-bottom: 10px; }
@@ -582,6 +586,10 @@ a.link:hover { color: #87ccec; }
 .address .address__item_right { float: right; margin-top: 3px; }
 .address .address__info { margin-top: 15px; }
 .address .address-price { font-family: Arial, sans-serif; font-size: 30px; font-weight: bold; }
+.address .address-price-md { font-family: "roboto-regular", Arial, sans-serif; font-size: 22px; font-weight: 700; line-height: 1.2; color: #000; float: right; }
+.address .address-operation { color: #000; font-weight: 400; line-height: 1.2; float: left; font-family: Arial, sans-serif; }
+.address .col-left { float: left; width: 410px; }
+.address .col-right { overflow: hidden; }
 
 .mCSB_scrollTools .mCSB_draggerContainer:after { content: ""; background: url('../img/icons-s7a5d6aa745.png') 0 -16px no-repeat; width: 14px; height: 10px; position: absolute; bottom: -26px; right: -1px; }
 .mCSB_scrollTools .mCSB_draggerContainer:before { content: ""; background: url('../img/icons-s7a5d6aa745.png') 0 -36px no-repeat; width: 14px; height: 10px; position: absolute; top: -26px; right: -1px; }
