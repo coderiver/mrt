@@ -640,7 +640,7 @@ a.link:hover { color: #87ccec; }
 .btn-add:hover { color: #87ccec; }
 .btn-add:hover i { background: url("../img/svg/add-h.svg") no-repeat 0 0; -moz-background-size: 16px 16px; -o-background-size: 16px 16px; -webkit-background-size: 16px 16px; background-size: 16px 16px; }
 
-th { font-weight: normal; }
+th { font-weight: normal; font-weight: normal; }
 
 .article h2 { font-family: "roboto-light", Arial, sans-serif; font-size: 30px; color: #111; line-height: 1.1em; margin-top: 90px; }
 .article h2:first-child { margin-top: 0; }
