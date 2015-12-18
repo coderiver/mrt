@@ -1,0 +1,62 @@
+.popup-wrap
+	position: fixed
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto 
+	background-color: rgba(0, 0, 0, .5)
+	z-index: 1000
+	overflow: auto
+	+vertical
+	display: none
+	&.is-active
+		display: block
+	.popup
+		width: 659px
+		height: 564px
+		background-color: #FFF
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		padding: 34px 100px
+		text-align: left
+		.select
+			border: 1px solid #e4ebed
+		.select-special
+			color: #000
+			text-align: center
+			+reg
+			font-size: 18px
+	.popup-close
+		position: absolute
+		right: 19px
+		top: 0
+		z-index: 10
+		cursor: pointer
+		+s(close)
+	.popup-title
+		+light
+		line-height: 1
+		font-size: 20px
+		color: #000
+	.popup-location
+		+bold 
+		font-size: 28px
+		line-height: 1
+		color: #000
+		margin: 12px 0 25px
+	.row
+		font-size: 0
+		margin-top: 19px
+		.col 
+			display: inline-block
+			vertical-align: middle
+			width: 50%
+			&.col1 
+				padding-right: 25px
+		span 
+			color: #000
+			font-size: 16px
+			line-height: 1
+			+light

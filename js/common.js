@@ -107,4 +107,10 @@ head.ready(function() {
 		preventDefault: true,
 		scrollAmount: 150 }
 	});
+	$(".js-popup").on("click", function(){
+		$(".popup-wrap").toggleClass("is-active");
+	});
+	$(".js-close").on("click", function(){
+		$(".popup-wrap").removeClass("is-active");
+	});
 });
