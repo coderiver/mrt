@@ -60,6 +60,8 @@
 +font(Roboto-ThinItalic, roboto-thin-i)
 +font(robotocondensed-bold,robotocondensed-bold)
 +font(Helvetica_Light-Normal,helveticaneuecyr-medium)
++font(HelveticaNeue, HelveticaNeue)
++font(HelveticaNeueBold, HelveticaNeueBold)
 
 =reg
 	font-family: "roboto-regular", Arial, sans-serif 
@@ -87,7 +89,12 @@
 	font-family: "roboto-thin-i",   Arial, sans-serif
 =cbold
 	font-family: "robotocondensed-bold",   Arial, sans-serif 
-
+=helvetica 
+	font-family: "HelveticaNeue", sans-serif
+=helvetica-bold
+	font-family: "HelveticaNeueBold", sans-serif
+=helvetica-reg
+	font-family: "Helvetica_Light-Normal"
 =arial
 	font-family:  Arial, sans-serif
 	
@@ -110,6 +117,27 @@ $orange: #ff8e41
 	+s(set)
 .icon-clock
 	+s(clock)
+
+//buttons
+.btn-register
+	width: 131px
+	height: 32px
+	line-height: 31px
+	background-color: $orange
+	border: 1px solid #e1762e
+	border-radius: 5px
+	+bold
+	font-size: 18px
+	font-weight: 700
+	color: #fff
+	+tr(all .3s)
+	position: relative
+	&:hover
+		background-color: #f8962d
+	&:active
+		top: 1px
+
+
 body
 	+reg
 	font-size: 14px 
