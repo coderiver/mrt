@@ -219,3 +219,48 @@
 		a
 			display: inline-block
 			padding: 10px 0
+
+
+//lp-comments
+.lp-comments
+	.header__title
+		max-width: 1040px
+		margin: auto	
+//comments
+.comments
+	[class^="icon-"], 
+	[class*=" icon-"]
+		vertical-align: top
+	tr
+		&:last-child td
+			border-bottom: 0
+	td 
+		padding-top: 25px
+		padding-bottom: 25px
+		border-bottom: 1px solid #dbe3e5
+		p 
+			color: #ccc
+			font-size: 12px
+			+bold 
+			line-height: 1
+			padding-top: 3px
+	&__name
+		width: calc(100% - 25px)
+		display: inline-block
+		vertical-align: top
+		+prevent-text
+		padding-right: 7px
+		font-size: 15px
+		color: #000
+		+bold
+
+	&__human
+		width: 110px
+		text-align: center
+	&__text
+		padding-left: 15px
+		padding-right: 15px
+		color: #333
+		+reg
+		font-size: 14px
+		font-weight: 400
