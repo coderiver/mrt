@@ -4,7 +4,6 @@
 	bottom: 0
 	left: 0
 	right: 0
-	margin: auto 
 	background-color: rgba(0, 0, 0, .5)
 	z-index: 1000
 	overflow: auto
@@ -21,13 +20,34 @@
 		position: relative
 		padding: 34px 100px
 		text-align: left
-		.select
+		.input
 			border: 1px solid #e4ebed
+			+reg
+			line-height: 1
+			font-size: 16px
+			color: #b7c3c7
+			height: 47px
+			line-height: 47px
+			background-color: #fff
+			border-radius: 5px
+			padding: 0 23px 0 16px
+			display: block
+			width: 100%
 		.select-special
 			color: #000
 			text-align: center
 			+reg
 			font-size: 18px
+		.select-service
+			text-align: center
+		.select__list
+			border: 1px solid #e4ebed
+
+		p 
+			color: #000
+			font-size: 16px
+			line-height: 1
+			+light
 	.popup-close
 		position: absolute
 		right: 19px
@@ -49,14 +69,17 @@
 	.row
 		font-size: 0
 		margin-top: 19px
+		&:nth-last-child(1)
+			margin-top: 29px
+		&:nth-last-child(2)
+			margin-top: 27px
+		&:nth-last-child(3)
+			margin-top: 32px
 		.col 
 			display: inline-block
 			vertical-align: middle
 			width: 50%
 			&.col1 
 				padding-right: 25px
-		span 
-			color: #000
-			font-size: 16px
-			line-height: 1
-			+light
+		.wrp
+			text-align: center

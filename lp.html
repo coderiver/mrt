@@ -244,7 +244,7 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
@@ -278,7 +278,7 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
@@ -312,11 +312,11 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
-													<div class="star is-active"></div>
-													<div class="star is-active"></div>
+													<div class="star is-half"></div>
+													<div class="star"></div>
 													<div class="star"></div>
 												</div>
 												<a href="#" class="address__comments">15 <span>отзывов</span></a>
@@ -346,7 +346,7 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
@@ -380,7 +380,7 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
@@ -414,7 +414,7 @@
 												</div>
 											</div>
 											<div class="address__col-right">
-												<div class="address__stars">
+												<div class="stars">
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
 													<div class="star is-active"></div>
@@ -707,34 +707,61 @@
 			<div class="popup-location">МРТ 24 на Павелецкой</div>
 			<div class="row">
 				<div class="col col1">
-					<span>Выберите специализацию:</span>
+					<p>Выберите специализацию:</p>
 				</div>
 				<div class="col col2">
 					<div class="select js-select">
-						<span class="select-special select__text js-select-text">МРТ</span>
+						<span class="input select-special select__text js-select-text">МРТ</span>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col col1">
-					<span>Выберите услугу:</span>
+					<p>Выберите услугу:</p>
 				</div>
 				<div class="col col2">
 					<div class="select js-select">
-						<span class="select-service select__text js-select-text">– Выбрать услугу –</span>
+						<span class="input select-service select__text js-select-text">– Выбрать услугу –</span>
 						<ul class="select__list js-select-list">
-							<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
-							<li data-val="Москва">Москва</li>
-							<li data-val="Калининград">Калининград</li>
-							<li data-val="Екатеринбург">Екатеринбург</li>
+							<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
+							<li data-val="МРТ гипофиза">МРТ гипофиза</li>
+							<li data-val="МРТ пазух носа">МРТ пазух носа</li>
+							<li data-val="МРТ краниовертебральной области">МРТ краниовертебральной области</li>
 						</ul>
 						<select>
-							<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
-							<option value="Москва">Москва</option>
-							<option value="Калининград">Калининград</option>
-							<option value="Екатеринбург">Екатеринбург</option>
+							<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
+							<option value="МРТ гипофиза">МРТ гипофиза</option>
+							<option value="МРТ пазух носа">МРТ пазух носа</option>
+							<option value="МРТ краниовертебральной области">МРТ краниовертебральной области</option>
 						</select>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col1">
+					<p>Выберите дату и время:</p>
+				</div>
+				<div class="col col2"></div>
+			</div>
+			<div class="row">
+				<div class="col col1">
+					<p>Введите имя:</p>
+				</div>
+				<div class="col col2">
+					<input type="text" name="name" placeholder="Имя" class="input">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col1">
+					<p>Введите телефон:</p>
+				</div>
+				<div class="col col2">
+					<input type="text" name="tel" placeholder="Телефон" class="input">
+				</div>
+			</div>
+			<div class="row">
+				<div class="wrp">
+					<button type="button" class="btn-register is-mod">Записаться</button>
 				</div>
 			</div>
 		</div>

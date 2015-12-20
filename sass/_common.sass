@@ -132,6 +132,10 @@ $orange: #ff8e41
 	color: #fff
 	+tr(all .3s)
 	position: relative
+	&.is-mod
+		width: 219px
+		height: 50px
+		line-height: 48px
 	&:hover
 		background-color: #f8962d
 	&:active
@@ -226,3 +230,17 @@ a.link
 	+tr(color .3s)
 	&:hover
 		color: #87ccec
+//stars
+.stars
+	font-size: 0
+	margin-top: 5px
+	.star
+		display: inline-block
+		vertical-align: top
+		margin-right: 3px
+		+s(star)
+		cursor: pointer
+		&.is-active
+			+s(star-active)
+		&.is-half
+			+s(star-active-h)		
