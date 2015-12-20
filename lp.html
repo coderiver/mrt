@@ -712,6 +712,18 @@
 				<div class="col col2">
 					<div class="select js-select">
 						<span class="input select-special select__text js-select-text">МРТ</span>
+						<ul class="select__list js-select-list">
+							<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
+							<li data-val="МРТ гипофиза">МРТ гипофиза</li>
+							<li data-val="МРТ пазух носа">МРТ пазух носа</li>
+							<li data-val="МРТ краниовертебральной области">МРТ краниовертебральной области</li>
+						</ul>
+						<select>
+							<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
+							<option value="МРТ гипофиза">МРТ гипофиза</option>
+							<option value="МРТ пазух носа">МРТ пазух носа</option>
+							<option value="МРТ краниовертебральной области">МРТ краниовертебральной области</option>
+						</select>
 					</div>
 				</div>
 			</div>
@@ -744,7 +756,7 @@
 				<div class="col col2">
 					<div class="wrapper">
 						<div class="col is-left">
-							<div class="date">
+							<div class="input-date">
 								<input type="text" class="input" id="datepicker" placeholder="дд.мм">
 								<button type="button" class="calendar js-calendar"><i class="ico-calendar"></i></button>
 							</div>
