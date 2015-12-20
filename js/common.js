@@ -113,4 +113,6 @@ head.ready(function() {
 	$(".js-close").on("click", function(){
 		$(".popup-wrap").removeClass("is-active");
 	});
+	
+	$("#datepicker").datepicker();
 });

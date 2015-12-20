@@ -741,7 +741,33 @@
 				<div class="col col1">
 					<p>Выберите дату и время:</p>
 				</div>
-				<div class="col col2"></div>
+				<div class="col col2">
+					<div class="wrapper">
+						<div class="col is-left">
+							<div class="date">
+								<input type="text" class="input" id="datepicker" placeholder="дд.мм">
+								<button type="button" class="calendar js-calendar"><i class="ico-calendar"></i></button>
+							</div>
+						</div>
+						<div class="col is-right">
+							<div class="time select js-select">
+								<span class="input select__text js-select-text">время</span>
+								<ul class="select__list js-select-list">
+									<li data-val="8 : 00" class="is-active">8 : 00</li>
+									<li data-val="8 : 30">8 : 30</li>
+									<li data-val="9 : 00">9 : 00</li>
+									<li data-val="9 : 30">9 : 30</li>
+								</ul>
+								<select>
+									<option value="8 : 00" selected="selected">8 : 00</option>
+									<option value="8 : 30">8 : 30</option>
+									<option value="9 : 00">9 : 00</option>
+									<option value="9 : 30">9 : 30</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col col1">
