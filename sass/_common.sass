@@ -127,6 +127,10 @@ $orange: #ff8e41
 	+s(msg)
 .icon-show
 	+s(show)
+.icon-like-w
+	+s(like-w)
+.icon-dislike-w
+	+s(dislike-w)
 	
 
 //buttons
@@ -151,7 +155,48 @@ $orange: #ff8e41
 		background-color: #f8962d
 	&:active
 		top: 1px
+.btn-send
+	width: 232px
+	height: 53px
+	line-height: 51px
+	background-color: #ff8e41
+	border: 1px solid #e1762e
+	border-radius: 5px
+	+tr(all .4s)
+	text-align: center
+	position: relative
+	+bold
+	font-size: 18px
+	color: #fff
+	&:hover
+		opacity: 0.8
+	&:active
+		top: 1px
 
+.btn-like
+	width: 70px
+	height: 53px
+	background-color: #6c3
+	border-radius: 5px
+	+vertical
+	position: relative
+	&:hover
+		opacity: 0.8
+		+tr(all .4s)
+	&:active
+		top: 1px
+.btn-dislike
+	width: 70px
+	height: 53px
+	background-color: #eb635d
+	border-radius: 5px
+	+vertical
+	position: relative
+	&:hover
+		opacity: 0.8
+		+tr(all .4s)
+	&:active
+		top: 1px
 
 body
 	+reg

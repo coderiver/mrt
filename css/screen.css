@@ -459,10 +459,28 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .icon-show { background: url('../img/icons-sa624b85462.png') 0 -448px no-repeat; width: 16px; height: 16px; }
 
+.icon-like-w { background: url('../img/icons-sa624b85462.png') 0 -298px no-repeat; width: 17px; height: 17px; }
+
+.icon-dislike-w { background: url('../img/icons-sa624b85462.png') 0 -212px no-repeat; width: 17px; height: 17px; }
+
 .btn-register { width: 131px; height: 32px; line-height: 31px; background-color: #ff8e41; border: 1px solid #e1762e; border-radius: 5px; font-family: "roboto-bold", Arial, sans-serif; font-size: 18px; font-weight: 700; color: #fff; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; position: relative; }
 .btn-register.is-mod { width: 219px; height: 50px; line-height: 48px; }
 .btn-register:hover { background-color: #f8962d; }
 .btn-register:active { top: 1px; }
+
+.btn-send { width: 232px; height: 53px; line-height: 51px; background-color: #ff8e41; border: 1px solid #e1762e; border-radius: 5px; -moz-transition: all 0.4s; -o-transition: all 0.4s; -webkit-transition: all 0.4s; transition: all 0.4s; text-align: center; position: relative; font-family: "roboto-bold", Arial, sans-serif; font-size: 18px; color: #fff; }
+.btn-send:hover { opacity: 0.8; }
+.btn-send:active { top: 1px; }
+
+.btn-like { width: 70px; height: 53px; background-color: #6c3; border-radius: 5px; text-align: center; font-size: 0; position: relative; }
+.btn-like:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.btn-like:hover { opacity: 0.8; -moz-transition: all 0.4s; -o-transition: all 0.4s; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.btn-like:active { top: 1px; }
+
+.btn-dislike { width: 70px; height: 53px; background-color: #eb635d; border-radius: 5px; text-align: center; font-size: 0; position: relative; }
+.btn-dislike:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.btn-dislike:hover { opacity: 0.8; -moz-transition: all 0.4s; -o-transition: all 0.4s; -webkit-transition: all 0.4s; transition: all 0.4s; }
+.btn-dislike:active { top: 1px; }
 
 body { font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; line-height: 1.4; }
 
@@ -643,15 +661,26 @@ a.link:hover { color: #87ccec; }
 .comments td { padding-top: 25px; padding-bottom: 25px; border-bottom: 1px solid #dbe3e5; }
 .comments td p { color: #ccc; font-size: 12px; font-family: "roboto-bold", Arial, sans-serif; line-height: 1; padding-top: 3px; }
 .comments__name { width: calc(100% - 25px); display: inline-block; vertical-align: top; -ms-word-break: break-all; word-break: break-all; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; padding-right: 7px; font-size: 15px; color: #000; font-family: "roboto-bold", Arial, sans-serif; }
-.comments__human { width: 110px; text-align: center; }
+.comments__human { width: 110px; padding-left: 10px; }
 .comments__text { padding-left: 15px; padding-right: 15px; color: #333; font-family: "roboto-regular", Arial, sans-serif; font-size: 14px; font-weight: 400; }
 
-.tline td { text-align: center; width: 33.3%; }
+.tline td { width: 33.3%; }
 .tline td.is-left { text-align: left; }
 .tline td.is-right { text-align: right; }
 .tline td a { color: #2596ca; font-family: "roboto-regular", Arial, sans-serif; font-size: 18px; text-decoration: none; }
 .tline td i { vertical-align: middle; margin-right: 7px; }
+.tline td i.icon_mod { margin-top: -3px; }
+.tline td span { vertical-align: middle; }
 .tline td span:hover, .tline td span.active { text-decoration: underline; }
+
+.send-msg { background-color: #e8eff1; padding: 21px 31px 30px; }
+.send-msg__title { font-family: "roboto-regular", Arial, sans-serif; color: #2596ca; line-height: 1; font-size: 18px; margin-bottom: 20px; }
+.send-msg__name { width: 295px; height: 55px; background-color: white; border: 1px solid #e4ebed; border-radius: 5px; font-size: 16px; color: #b7c3c7; font-family: "roboto-regular", Arial, sans-serif; padding: 10px 19px; }
+.send-msg__row { font-size: 0; }
+.send-msg__row button, .send-msg__row input { display: inline-block; vertical-align: top; margin-right: 10px; }
+.send-msg .btn-send { margin-right: 0; }
+.send-msg textarea { width: 100%; height: 116px; display: block; background-color: white; border: 1px solid #e4ebed; border-radius: 5px; padding: 17px 18px; font-family: "roboto-regular", Arial, sans-serif; font-size: 16px; color: #b7c3c7; resize: none; margin-bottom: 18px; }
+.send-msg i { display: inline-block; vertical-align: middle; }
 
 .contacts { padding: 10px 0 140px; }
 .contacts .contacts__in { font-size: 0; margin: 50px 0 0 -126px; }
