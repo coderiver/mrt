@@ -10,6 +10,8 @@ th
 		margin-top: 90px
 		&:first-child
 			margin-top: 0
+		&.is-mod
+			margin-top: 15px
 	h3
 		+light
 		font-size: 24px
@@ -19,7 +21,12 @@ th
 		+arial
 		font-size: 14px 
 		line-height: 1.72em 
-		margin: 20px 0  
+		margin: 20px 0
+		&.is-mod
+			+helvetica
+			> span 
+				margin-top: 26px
+				display: block
 		a
 			color: inherit
 			text-decoration: none
@@ -60,6 +67,8 @@ th
 
 .table-short
 	background: #f8fafb 
+	&.is-mod
+		margin-bottom: 61px
 	th,
 	td
 		padding: 15px 46px 15px 46px 
@@ -80,6 +89,15 @@ th
 		border-bottom: 1px solid #dbe3e5
 		&:last-child
 			border-bottom: none
+	.stars
+		margin-left: 0
+		.star
+			margin-left: 0
+	.link-comment
+		+reg
+		display: inline-block
+		vertical-align: top
+		padding: 10px 0 0 14px
 
 .link-more
 	text-decoration: none

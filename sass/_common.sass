@@ -94,7 +94,7 @@
 =helvetica-bold
 	font-family: "HelveticaNeueBold", sans-serif
 =helvetica-reg
-	font-family: "Helvetica_Light-Normal"
+	font-family: "Helvetica_Light-Normal", sans-serif
 =arial
 	font-family:  Arial, sans-serif
 	
@@ -121,6 +121,8 @@ $orange: #ff8e41
 	+s(calendar)
 .icon-like
 	+s(like)
+.icon-dislike
+	+s(dislike)
 .icon-estimate
 	+s(like-dislike)
 .icon-msg
@@ -172,7 +174,6 @@ $orange: #ff8e41
 		opacity: 0.8
 	&:active
 		top: 1px
-
 .btn-like
 	width: 70px
 	height: 53px
@@ -182,29 +183,10 @@ $orange: #ff8e41
 	position: relative
 	overflow: hidden
 	&.btn_lg
-		height: 50px
-		width: 200px
-		+bold
-		font-size: 16px
-		color: #fff
+		i 
+			top: 16px
 		&:before
-			content: ''
-			display: block
-			position: absolute
-			top: 0
-			bottom: 0
-			right: 0
-			width: 47px
 			background-color: #5bb52d
-		span
-			margin-right: 47px
-		i
-			position: absolute
-			right: 14px
-			top: 0
-			bottom: 0
-			margin: auto
-			z-index: 10
 	&:hover
 		opacity: 0.8
 		+tr(all .4s)
@@ -219,34 +201,36 @@ $orange: #ff8e41
 	position: relative
 	overflow: hidden
 	&.btn_lg
-		height: 50px
-		width: 200px
-		+bold
-		font-size: 16px
-		color: #fff
+		i 
+			top: 19px
 		&:before
-			content: ''
-			display: block
-			position: absolute
-			top: 0
-			bottom: 0
-			right: 0
-			width: 47px
 			background-color: #cf5953
-		span
-			margin-right: 47px
-		i
-			position: absolute
-			right: 14px
-			top: 0
-			bottom: 0
-			margin: auto
-			z-index: 10
 	&:hover
 		opacity: 0.8
 		+tr(all .4s)
 	&:active
 		top: 1px
+.btn-like.btn_lg, .btn-dislike.btn_lg
+	height: 50px
+	width: 200px
+	+bold
+	font-size: 16px
+	color: #fff
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		width: 47px
+	span
+		padding-right: 47px
+		display: block
+	i
+		position: absolute
+		right: 14px
+		z-index: 10
 
 body
 	+reg
@@ -340,6 +324,8 @@ a.link
 .stars
 	font-size: 0
 	margin-top: 5px
+	display: inline-block
+	vertical-align: middle
 	.star
 		display: inline-block
 		vertical-align: top
