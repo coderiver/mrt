@@ -114,5 +114,11 @@ head.ready(function() {
 		$(".popup-wrap").removeClass("is-active");
 	});
 	
-	$("#datepicker").datepicker();
+	$("#datepicker").datepicker({
+		dateFormat: "dd.mm"
+	});
+
+	$('.js-calendar').click(function() {
+		$("#datepicker").datepicker("show");
+	});
 });

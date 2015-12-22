@@ -692,7 +692,7 @@ a.link:hover { color: #87ccec; }
 
 .send-msg { background-color: #e8eff1; padding: 21px 31px 30px; margin-bottom: 31px; }
 .send-msg__title { font-family: "roboto-regular", Arial, sans-serif; color: #2596ca; line-height: 1; font-size: 18px; margin-bottom: 20px; }
-.send-msg__name { width: 295px; height: 55px; background-color: white; border: 1px solid #e4ebed; border-radius: 5px; font-size: 16px; color: #b7c3c7; font-family: "roboto-regular", Arial, sans-serif; padding: 10px 19px; }
+.send-msg__name { width: calc(100% - 402px); height: 55px; background-color: white; border: 1px solid #e4ebed; border-radius: 5px; font-size: 16px; color: #b7c3c7; font-family: "roboto-regular", Arial, sans-serif; padding: 10px 19px; }
 .send-msg__row { font-size: 0; text-align: center; }
 .send-msg__row button, .send-msg__row input { display: inline-block; vertical-align: top; margin-right: 10px; }
 .send-msg .btn-send { margin-right: 0; }
