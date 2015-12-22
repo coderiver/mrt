@@ -70,11 +70,25 @@
 								</select>
 							</div>
 						</div>
-						<input type="button" class="form__btn btn-orange" value="Показать лучшие условия">
-						<div class="form__footer">
-							<p>или просто звоните</p>
-							<div class="header__title">+7 (812) 385-77-56</div>
+						<div class="input-wrap">
+							<input type="text" class="input input_flex" id="datepicker" placeholder="дд.мм">
+							<div class="time select js-select">
+								<span class="input select__text js-select-text">время</span>
+								<ul class="select__list js-select-list">
+									<li data-val="8 : 00" class="is-active">8 : 00</li>
+									<li data-val="8 : 30">8 : 30</li>
+									<li data-val="9 : 00">9 : 00</li>
+									<li data-val="9 : 30">9 : 30</li>
+								</ul>
+								<select>
+									<option value="8 : 00" selected="selected">8 : 00</option>
+									<option value="8 : 30">8 : 30</option>
+									<option value="9 : 00">9 : 00</option>
+									<option value="9 : 30">9 : 30</option>
+								</select>
+							</div>
 						</div>
+						<input type="button" class="form__btn btn-orange is-large" value="Записаться">
 					</form>
 				</div>
 			</div>
@@ -134,66 +148,70 @@
 									</td>
 								</tr>
 							</table>
-							<div class="container container_no-pad">
-								<div class="l">
-									<div class="l-col1">
-										<h2 class="is-mod">Какие цены на исследования в центре Европейский диагностический центр (ЕДЦ)?</h2>
-										<table id="js-price" class="table-list js-sort">
-											<thead>
-												<tr>
-													<th>НАЗВАНИЕ ЦЕНТРА</th>
-													<th>БЛИЖАЙШИЕ СТАНЦИИ МЕТРО</th>
-													<th role="sort">ЦЕНА <i class="icon-arr2-b"></i></th>
-													<th role="sort">ЦЕНА С КОНТРАСТОМ <i class="icon-arr2-b"></i></th>
-													<th role="sort">ЦЕНА СО СКИДКОЙ <i class="icon-arr2-b"></i></th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td><a href="#">Эмси Диагностика</a></td>
-													<td>Лорьковская</td>
-													<td>2000</td>
-													<td>2500</td>
-													<td>4000</td>
-												</tr>
-												<tr>
-													<td><a href="#">Рэмси Диагностика</a></td>
-													<td>Горьковская</td>
-													<td>1000</td>
-													<td>2000</td>
-													<td>2500</td>
-												</tr>
-												<tr>
-													<td><a href="#">Рэмси Диагностика</a></td>
-													<td>Горьковская</td>
-													<td>3000</td>
-													<td>5000</td>
-													<td>2500</td>
-												</tr>
-												<tr>
-													<td><a href="#">Рэмси Диагностика</a></td>
-													<td>Горьковская</td>
-													<td>3000</td>
-													<td>5000</td>
-													<td>2500</td>
-												</tr>
-											</tbody>
-										</table>
-										<a href="#" class="link-more"><i class="icon-add"></i>Показать все</a>
-									</div>
-									<div class="l-col2">
-										<div class="banner">
-											<div class="banner__header">ОСТАЛОСЬ</div>
-											<div class="banner__count"><span>5</span></div>
-											<p>мест по специальной цене</p>
-											<div class="banner__footer">
-												<p><strong>Звоните сейчас</strong></p>
-												<p>+7 (812) 385-77-56</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+						</div>
+					</div>
+					<div class="l-col2">
+						<aside class="sidebar">
+							<h4>Навигация по странице:</h4>
+							<ul class="js-nav">
+								<li><a href="#">Краткое описание</a></li>
+								<li><a href="#">Основная информация</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Оборудование</a></li>
+								<li><a href="#">Как записаться</a></li>
+							</ul>
+							
+						</aside>
+					</div>
+				</div>
+			</div>
+			<div class="container container_no-pad">
+				<div class="l">
+					<div class="l-col1">
+						<div class="article">
+							<h2 class="is-mod">Какие цены на исследования в центре Европейский диагностический центр (ЕДЦ)?</h2>
+							<table id="js-price" class="table-list js-sort">
+								<thead>
+									<tr>
+										<th>НАЗВАНИЕ ЦЕНТРА</th>
+										<th>БЛИЖАЙШИЕ СТАНЦИИ МЕТРО</th>
+										<th role="sort">ЦЕНА <i class="icon-arr2-b"></i></th>
+										<th role="sort">ЦЕНА С КОНТРАСТОМ <i class="icon-arr2-b"></i></th>
+										<th role="sort">ЦЕНА СО СКИДКОЙ <i class="icon-arr2-b"></i></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="#">Эмси Диагностика</a></td>
+										<td>Лорьковская</td>
+										<td>2000</td>
+										<td>2500</td>
+										<td>4000</td>
+									</tr>
+									<tr>
+										<td><a href="#">Рэмси Диагностика</a></td>
+										<td>Горьковская</td>
+										<td>1000</td>
+										<td>2000</td>
+										<td>2500</td>
+									</tr>
+									<tr>
+										<td><a href="#">Рэмси Диагностика</a></td>
+										<td>Горьковская</td>
+										<td>3000</td>
+										<td>5000</td>
+										<td>2500</td>
+									</tr>
+									<tr>
+										<td><a href="#">Рэмси Диагностика</a></td>
+										<td>Горьковская</td>
+										<td>3000</td>
+										<td>5000</td>
+										<td>2500</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="#" class="link-more"><i class="icon-add"></i>Показать все</a>
 							<h2 id="js-choose">Какое оборудование используется в центре?</h2>
 							<p class="is-mod"><span>В диагностическом центре Европейский диагностический центр (ЕДЦ) исследования проводятся на следующем оборудовании:</span></p>
 							<table class="table-simple">
@@ -210,17 +228,15 @@
 						</div>
 					</div>
 					<div class="l-col2">
-						<aside class="sidebar">
-							<h4>Навигация по странице:</h4>
-							<ul class="js-nav">
-								<li><a href="#">Краткое описание</a></li>
-								<li><a href="#">Основная информация</a></li>
-								<li><a href="#">Цены</a></li>
-								<li><a href="#">Оборудование</a></li>
-								<li><a href="#">Как записаться</a></li>
-							</ul>
-							
-						</aside>
+						<div class="banner">
+							<div class="banner__header">ОСТАЛОСЬ</div>
+							<div class="banner__count"><span>5</span></div>
+							<p>мест по специальной цене</p>
+							<div class="banner__footer">
+								<p><strong>Звоните сейчас</strong></p>
+								<p>+7 (812) 385-77-56</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -313,7 +329,6 @@
 							</div>
 						</form>
 					</div>
-					<div class="l-col2"></div>
 				</div>
 			</div>
 		</div>

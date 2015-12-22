@@ -36,10 +36,10 @@
 		height: 45px
 	.form__select
 		display: inline-block
-		margin-right: 25px
+		margin: 0 12px
 		vertical-align: top
-		&:last-of-type
-			margin-right: 0
+		// &:last-of-type
+		// 	margin-right: 0
 		+r(1100)
 			margin-right: 10px
 	.form__btn
@@ -74,15 +74,28 @@
 .input-wrap
 	text-align: left
 	+display-flex()
-	+justify-content(space-between)	
-	margin: 0 auto	
+	
+	margin: auto
 	.form__input
 		width: auto
-		margin-right: 25px
+		margin: 0 12px
 		+flex(1 0 100px)
 		+r(1100)
 			margin-right: 10px
-		
+.input-wrap + .input-wrap
+	margin-top: 56px
+	+justify-content(center)	
+	width: 50%
+	.input
+		width: auto
+		padding-left: 16px
+		padding-right: 16px
+		&.input_flex
+			+flex(1 0 100px)
+			margin: 0 12px
+	.select
+		+flex(1 0 100px)
+		margin: 0 12px
 		
 
 
@@ -167,5 +180,7 @@
 	font-size: 18px
 	cursor: pointer
 	+tr(background .3s)
+	&.is-large
+		width: 305px
 	&:hover
 		background: #f8962d 
