@@ -95,3 +95,83 @@
 	border-radius: 5px
 	display: block
 	width: 100%
+
+//datepicker
+#ui-datepicker-div
+	width: 280px
+	height: 233px
+	background-color: white
+	border: 1px solid #e4ebed
+	border-radius: 0px 5px 5px
+	padding: 0
+	+reg
+	font-size: 18px
+	color: #2596ca
+	.ui-datepicker-calendar
+		table-layout: fixed
+	.ui-widget-header
+		background-color: transparent
+		border: none
+		color: #2596ca
+	.ui-datepicker-title
+		font-weight: normal
+	.ui-state-default
+		border: none
+		background: none
+		text-align: center
+		display: block
+		padding: 0
+		color: #2596ca
+		&.ui-state-hover
+			color: #2596ca
+	.ui-state-active, .ui-state-active:hover
+		background-color: #2696ca
+		color: #fff
+		+bold
+	.ui-datepicker-calendar
+		th 
+			background-color: #deebef
+			font-size: 14px !important
+	.ui-datepicker-next
+		// width: auto
+		// height: auto
+		top: 50%
+		transform: translateY(-50%)
+		right: 20px
+		.ui-icon 
+			+s(arr-date-r)
+			margin: 0
+			+vcenter
+	.ui-datepicker-prev
+		// width: auto
+		// height: auto
+		top: 50%
+		transform: translateY(-50%)
+		left: 20px
+		.ui-icon 
+			+s(arr-date-l)
+			margin: 0
+			+vcenter
+	.ui-state-hover, 
+	.ui-datepicker-next-hover,
+	.ui-datepicker-prev-hover
+		background: none
+		border: none
+
+
+	td,th
+		line-height: 30px
+		padding: 0 !important
+		font-weight: normal
+	tr
+		border-bottom: 1px solid #e4ebed
+		&:last-child
+			border-bottom: 0
+	thead
+		tr
+			border-left: 10px solid #deebef
+			border-right: 10px solid #deebef
+	tbody
+		tr
+			border-left: 10px solid #fff
+			border-right: 10px solid #fff
