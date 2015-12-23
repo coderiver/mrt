@@ -211,6 +211,39 @@
 									</tr>
 								</tbody>
 							</table>
+							<!-- <a href="#" class="link-more"><i class="icon-add"></i>Показать все</a>
+							<h2 id="js-equip">Какое оборудование используется в центре?</h2>
+							<p class="is-mod"><span>В диагностическом центре Европейский диагностический центр (ЕДЦ) исследования проводятся на следующем оборудовании:</span></p>
+							<table class="table-simple">
+								<tr>
+									<th>Brivo MR355, General Electric (США)</th>
+									<td>Закрытый контур напряженностью 1,5 Тл</td>
+								</tr>
+							</table>
+							<h2 id="js-how">Как записаться в центр Европейский <br> диагностический центр (ЕДЦ)?</h2>
+							<p class="is-mod">
+								Чтобы записаться в Европейский диагностический центр (ЕДЦ) на самых выгодных условиях, вам нужно позвонить по телефону: 8 (495) 204-31-00. Наши консультанты ответят на все вопросы и запишут на исследование по специальным условиям! 
+							</p>
+							<h2>Отзывы о центре Европейский диагностический центр (ЕДЦ) </h2> -->
+						</div>
+					</div>
+					<div class="l-col2">
+						<div class="banner">
+							<div class="banner__header">ОСТАЛОСЬ</div>
+							<div class="banner__count"><span>5</span></div>
+							<p>мест по специальной цене</p>
+							<div class="banner__footer">
+								<p><strong>Звоните сейчас</strong></p>
+								<p>+7 (812) 385-77-56</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container container_no-pad">
+				<div class="l">
+					<div class="l-col1">
+						<div class="article">
 							<a href="#" class="link-more"><i class="icon-add"></i>Показать все</a>
 							<h2 id="js-equip">Какое оборудование используется в центре?</h2>
 							<p class="is-mod"><span>В диагностическом центре Европейский диагностический центр (ЕДЦ) исследования проводятся на следующем оборудовании:</span></p>
@@ -228,14 +261,20 @@
 						</div>
 					</div>
 					<div class="l-col2">
-						<div class="banner">
-							<div class="banner__header">ОСТАЛОСЬ</div>
-							<div class="banner__count"><span>5</span></div>
-							<p>мест по специальной цене</p>
-							<div class="banner__footer">
-								<p><strong>Звоните сейчас</strong></p>
-								<p>+7 (812) 385-77-56</p>
-							</div>
+						<div class="sidebar-wrap">
+							<aside class="sidebar">
+								<div class="sorting">
+									<div class="sorting__message">
+										<a href="#" class="link">Перейти к полному описанию</a>
+									</div>
+									<div class="sorting__header">Сортировка</div>
+									<ul>
+										<li><a href="#" class="link">Сначала дешевые</a></li>
+										<li><a href="#" class="link">Лучшее оборудование</a></li>
+										<li><a href="#" class="link">Круглосуточные</a></li>
+									</ul>
+								</div>
+							</aside>
 						</div>
 					</div>
 				</div>
@@ -522,64 +561,6 @@
 	</div>
 	<!-- END popup -->
 	<!-- load scripts -->
-	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
-	<script>
-	ymaps.ready(function() {
-		var myMap = new ymaps.Map('map', {
-				center: [55.740193, 37.657691],
-				zoom: 16
-			}, {
-				searchControlProvider: 'yandex#search'
-			}),
-			myPlacemark = new ymaps.Placemark([55.741885, 37.663746], {
-				hintContent: 'Собственный значок метки'
-			}, {
-				// Опции.
-				// Необходимо указать данный тип макета.
-				iconLayout: 'default#image',
-				// Своё изображение иконки метки.
-				iconImageHref: 'img/mark.png',
-				// Размеры метки.
-				iconImageSize: [50, 72],
-				// Смещение левого верхнего угла иконки относительно
-				// её "ножки" (точки привязки).
-				iconImageOffset: [0, -50]
-			});
-		myPlacemark2 = new ymaps.Placemark([55.737552, 37.655481], {
-			hintContent: 'Собственный значок метки'
-		}, {
-			// Опции.
-			// Необходимо указать данный тип макета.
-			iconLayout: 'default#image',
-			// Своё изображение иконки метки.
-			iconImageHref: 'img/mark.png',
-			// Размеры метки.
-			iconImageSize: [50, 72],
-			// Смещение левого верхнего угла иконки относительно
-			// её "ножки" (точки привязки).
-			iconImageOffset: [0, -50]
-		});
-		myPlacemark3 = new ymaps.Placemark([55.741237, 37.648591], {
-			hintContent: 'Собственный значок метки'
-		}, {
-			// Опции.
-			// Необходимо указать данный тип макета.
-			iconLayout: 'default#image',
-			// Своё изображение иконки метки.
-			iconImageHref: 'img/mark.png',
-			// Размеры метки.
-			iconImageSize: [50, 72],
-			// Смещение левого верхнего угла иконки относительно
-			// её "ножки" (точки привязки).
-			iconImageOffset: [0, -50]
-		});
-		myMap.geoObjects.add(myPlacemark);
-		myMap.geoObjects.add(myPlacemark2);
-		myMap.geoObjects.add(myPlacemark3);
-		myMap.behaviors.disable('scrollZoom');
-	});
-	</script>
 </body>
-
 </html>

@@ -728,6 +728,9 @@ a.link:hover { color: #87ccec; }
 .info { padding-bottom: 75px; }
 
 .sidebar { margin-top: 35px; }
+.sidebar-wrap { position: relative; border-top: 1px solid transparent; margin-top: 296px; }
+.sidebar-wrap .sorting__header { line-height: 1; }
+.sidebar-wrap .sorting__message { margin-top: -145px; }
 .sidebar h4 { font-size: 13px; font-family: Arial, sans-serif; font-weight: bold; margin-bottom: 20px; }
 .sidebar > ul { margin-bottom: 50px; }
 .sidebar > ul li { margin: 10px 0; }
