@@ -19,7 +19,6 @@
 			width: 70%
 			margin: 0 auto
 
-		
 .form
 	margin: 91px  0 51px
 	font-size: 0
@@ -31,17 +30,11 @@
 		+reg
 		font-size: 16px
 		border-radius: 5px
-		margin-right: 25px
 		vertical-align: top
 		height: 45px
 	.form__select
 		display: inline-block
-		margin: 0 12px
 		vertical-align: top
-		// &:last-of-type
-		// 	margin-right: 0
-		+r(1100)
-			margin-right: 10px
 	.form__btn
 		display: block
 		margin: 0 auto
@@ -70,40 +63,31 @@
 		.label
 			color: #d6d6d6
 				
-		
+
 .input-wrap
 	text-align: left
-	+display-flex()
-	
-	margin: auto
+	> div
+		margin-left: -12px
+		margin-right: -12px
+		text-align: center
+	.col
+		display: inline-block
+		width: 25%
+		vertical-align: top
+		padding: 0 12px
+		&.col_w20
+			width: 20%
 	.form__input
-		width: auto
-		margin: 0 12px
-		+flex(1 0 100px)
-		+r(1100)
-			margin-right: 10px
+		width: 100%
+	.form__select
+		width: 100%
 .input-wrap + .input-wrap
 	margin-top: 56px
-	+justify-content(center)	
-	width: 50%
-	.input
-		width: auto
-		padding-left: 16px
-		padding-right: 16px
-		&.input_flex
-			+flex(1 0 100px)
-			margin: 0 12px
-	.select
-		+flex(1 0 100px)
-		margin: 0 12px
-		
-
-
+	
 .select
 	position: relative
 	color: #000
 	border-radius: 5px
-	+flex(1 0 100px)
 	.select__text
 		font-size: 16px
 		border-radius: 5px

@@ -21,71 +21,73 @@
 				<div class="form">
 					<form>
 						<div class="input-wrap">
-							<input type="text" class="form__input" placeholder="Имя">
-							<input type="text" class="form__input" placeholder="Телефон">
-							<div class="form__select select js-select">
-								<span class="select__text js-select-text">Санкт-Петербург</span>
-								<label class="label">Ваш город</label>
-								<ul class="select__list js-select-list">
-									<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
-									<li data-val="Москва">Москва</li>
-									<li data-val="Калининград">Калининград</li>
-									<li data-val="Екатеринбург">Екатеринбург</li>
-								</ul>
-								<select>
-									<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
-									<option value="Москва">Москва</option>
-									<option value="Калининград">Калининград</option>
-									<option value="Екатеринбург">Екатеринбург</option>
-								</select>
-							</div>
-							<!-- <div class="form__select select js-select">
-								<span class="select__text js-select-text">МРТ</span>
-								<label class="label">Специализация</label>
-								<ul class="select__list js-select-list">
-									<li data-val="МРТ" class="is-active">МРТ</li>
-									<li data-val="УЗИ">УЗИ</li>
-									<li data-val="КТ">КТ</li>
-								</ul>
-								<select>
-									<option value="МРТ" selected="selected">МРТ</option>
-									<option value="УЗИ">УЗИ</option>
-									<option value="КТ">КТ</option>
-								</select>
-							</div> -->
-							<div class="form__select select js-select">
-								<span class="select__text js-select-text">МРТ головного мозга</span>
-								<label class="label">Услуга</label>
-								<ul class="select__list js-select-list">
-									<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
-									<li data-val="МРТ гипофиза">МРТ гипофиза</li>
-									<li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
-									<li data-val="МРТ пазух носа">МРТ пазух носа</li>
-								</ul>
-								<select>
-									<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
-									<option value="МРТ гипофиза">МРТ гипофиза</option>
-									<option value="МРТ глазных орбит">МРТ глазных орбит</option>
-									<option value="МРТ пазух носа">МРТ пазух носа</option>
-								</select>
+							<div>
+								<div class="col">
+									<input type="text" class="form__input" placeholder="Имя">
+								</div>
+								<div class="col">
+									<input type="text" class="form__input" placeholder="Телефон">
+								</div>
+								<div class="col">
+									<div class="form__select select js-select">
+										<span class="select__text js-select-text">Санкт-Петербург</span>
+										<label class="label">Ваш город</label>
+										<ul class="select__list js-select-list">
+											<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
+											<li data-val="Москва">Москва</li>
+											<li data-val="Калининград">Калининград</li>
+											<li data-val="Екатеринбург">Екатеринбург</li>
+										</ul>
+										<select>
+											<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
+											<option value="Москва">Москва</option>
+											<option value="Калининград">Калининград</option>
+											<option value="Екатеринбург">Екатеринбург</option>
+										</select>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form__select select js-select">
+										<span class="select__text js-select-text">МРТ головного мозга</span>
+										<label class="label">Услуга</label>
+										<ul class="select__list js-select-list">
+											<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
+											<li data-val="МРТ гипофиза">МРТ гипофиза</li>
+											<li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
+											<li data-val="МРТ пазух носа">МРТ пазух носа</li>
+										</ul>
+										<select>
+											<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
+											<option value="МРТ гипофиза">МРТ гипофиза</option>
+											<option value="МРТ глазных орбит">МРТ глазных орбит</option>
+											<option value="МРТ пазух носа">МРТ пазух носа</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="input-wrap">
-							<input type="text" class="input input_flex" id="datepicker" placeholder="дд.мм">
-							<div class="time select js-select">
-								<span class="input select__text js-select-text">время</span>
-								<ul class="select__list js-select-list">
-									<li data-val="8 : 00" class="is-active">8 : 00</li>
-									<li data-val="8 : 30">8 : 30</li>
-									<li data-val="9 : 00">9 : 00</li>
-									<li data-val="9 : 30">9 : 30</li>
-								</ul>
-								<select>
-									<option value="8 : 00" selected="selected">8 : 00</option>
-									<option value="8 : 30">8 : 30</option>
-									<option value="9 : 00">9 : 00</option>
-									<option value="9 : 30">9 : 30</option>
-								</select>
+							<div>
+								<div class="col">
+									<input type="text" class="input form__input" id="datepicker" placeholder="дд.мм">
+								</div>
+								<div class="col">
+									<div class="time select js-select">
+										<span class="input select__text js-select-text">время</span>
+										<ul class="select__list js-select-list">
+											<li data-val="8 : 00" class="is-active">8 : 00</li>
+											<li data-val="8 : 30">8 : 30</li>
+											<li data-val="9 : 00">9 : 00</li>
+											<li data-val="9 : 30">9 : 30</li>
+										</ul>
+										<select>
+											<option value="8 : 00" selected="selected">8 : 00</option>
+											<option value="8 : 30">8 : 30</option>
+											<option value="9 : 00">9 : 00</option>
+											<option value="9 : 30">9 : 30</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
 						<input type="button" class="form__btn btn-orange is-large" value="Записаться">
@@ -376,39 +378,49 @@
 				<div class="form form_ind">
 					<form>
 						<div class="input-wrap">
-							<input type="text" class="form__input" placeholder="Имя">
-							<input type="text" class="form__input" placeholder="Телефон">
-							<div class="form__select select js-select">
-								<span class="select__text js-select-text">Санкт-Петербург</span>
-								<label class="label">Ваш город</label>
-								<ul class="select__list js-select-list">
-									<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
-									<li data-val="Москва">Москва</li>
-									<li data-val="Калининград">Калининград</li>
-									<li data-val="Екатеринбург">Екатеринбург</li>
-								</ul>
-								<select>
-									<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
-									<option value="Москва">Москва</option>
-									<option value="Калининград">Калининград</option>
-									<option value="Екатеринбург">Екатеринбург</option>
-								</select>
-							</div>
-							<div class="form__select select js-select">
-								<span class="select__text js-select-text">МРТ головного мозга</span>
-								<label class="label">Услуга</label>
-								<ul class="select__list js-select-list">
-									<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
-									<li data-val="МРТ гипофиза">МРТ гипофиза</li>
-									<li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
-									<li data-val="МРТ пазух носа">МРТ пазух носа</li>
-								</ul>
-								<select>
-									<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
-									<option value="МРТ гипофиза">МРТ гипофиза</option>
-									<option value="МРТ глазных орбит">МРТ глазных орбит</option>
-									<option value="МРТ пазух носа">МРТ пазух носа</option>
-								</select>
+							<div>
+								<div class="col">
+									<input type="text" class="form__input" placeholder="Имя">
+								</div>
+								<div class="col">
+									<input type="text" class="form__input" placeholder="Телефон">
+								</div>
+								<div class="col">
+									<div class="form__select select js-select">
+										<span class="select__text js-select-text">Санкт-Петербург</span>
+										<label class="label">Ваш город</label>
+										<ul class="select__list js-select-list">
+											<li data-val="Санкт-Петербург" class="is-active">Санкт-Петербург</li>
+											<li data-val="Москва">Москва</li>
+											<li data-val="Калининград">Калининград</li>
+											<li data-val="Екатеринбург">Екатеринбург</li>
+										</ul>
+										<select>
+											<option value="Санкт-Петербург" selected="selected">Санкт-Петербург</option>
+											<option value="Москва">Москва</option>
+											<option value="Калининград">Калининград</option>
+											<option value="Екатеринбург">Екатеринбург</option>
+										</select>
+									</div>
+								</div>
+								<div class="col">
+									<div class="form__select select js-select">
+										<span class="select__text js-select-text">МРТ головного мозга</span>
+										<label class="label">Услуга</label>
+										<ul class="select__list js-select-list">
+											<li data-val="МРТ головного мозга" class="is-active">МРТ головного мозга</li>
+											<li data-val="МРТ гипофиза">МРТ гипофиза</li>
+											<li data-val="МРТ глазных орбит">МРТ глазных орбит</li>
+											<li data-val="МРТ пазух носа">МРТ пазух носа</li>
+										</ul>
+										<select>
+											<option value="МРТ головного мозга" selected="selected">МРТ головного мозга</option>
+											<option value="МРТ гипофиза">МРТ гипофиза</option>
+											<option value="МРТ глазных орбит">МРТ глазных орбит</option>
+											<option value="МРТ пазух носа">МРТ пазух носа</option>
+										</select>
+									</div>
+								</div>
 							</div>
 						</div>
 						<input type="button" class="form__btn btn-orange" value="Показать лучшие условия">
